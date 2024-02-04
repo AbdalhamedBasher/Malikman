@@ -156,14 +156,7 @@
                                 </div>
                             </div>
                         </form>
-                        <!-- Delete form -->
-                        @if($about_company)
-                            <form method="POST" action="{{ route('about_company.destroy', $about_company->id) }}">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Delete</button>
-                            </form>
-                        @endif
+                      
                     </div>
                 </div>
             </div>
@@ -182,14 +175,7 @@
                                                                         <button type="submit" class="btn btn-primary">
                                                                             {{ __('Submit') }}
                                                                         </button>
-                                                                        <!-- Delete button -->
-                                                                        @if($about_company)
-                                                                            <form method="POST" action="{{ route('about_company.destroy', $about_company->id) }}" style="display: inline;">
-                                                                                @csrf
-                                                                                @method('DELETE')
-                                                                                <button type="submit" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
-                                                                            </form>
-                                                                        @endif
+                                                                       
                                                                     </div>
                                                                 </div>
                                                             </form>
