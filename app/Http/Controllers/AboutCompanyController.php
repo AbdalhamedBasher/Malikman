@@ -45,13 +45,5 @@ class AboutCompanyController extends Controller
 
   
   
-    public function destroy($id)
-{
-    $about_company = AboutCompany::find($id);
-    if($about_company){
-        $about_company->delete();
-        return back()->with('success', 'تم الحذف بنجاح');
-    }
-    return back()->with('error', 'حدث خطأ ما');
-}
+   
 }
